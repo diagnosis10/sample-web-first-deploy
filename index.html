@@ -11,13 +11,14 @@
     
     <p>no one is listening</p>
     <a href="https://irsv.upmusics.com/AliBZ/Mohammad%20Alizadeh%20-%20Man%20Ba%20Khoda%20Tanham%20(320).mp3"> از اینجا دانلود کنید</a>
-    <h2 id="btn">بزن رو این تا  متن رو تغغییر بدم</h2>
+    <button id="btn">بزن رو این تا  متن رو تغغییر بدم</button>
 
     <script>
         let s = false;
         var changer = document.getElementById("btn")
+        console.log("sssss")
         changer.addEventListener("click",function(){
-            document.getElementById(text).innerText = s ? "hi" : "bye";
+            document.getElementById(text).innerHTML = s ? "hi" : "bye";
             s = !s;
         })
     </script>
