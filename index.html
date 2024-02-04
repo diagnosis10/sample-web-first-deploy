@@ -7,8 +7,19 @@
     
 </head>
 <body>
-    <h4>I'm your first deploy on github.</p>
+    <h4 id="text">I'm your first deploy on github.</p>
+    
     <p>no one is listening</p>
     <a href="https://irsv.upmusics.com/AliBZ/Mohammad%20Alizadeh%20-%20Man%20Ba%20Khoda%20Tanham%20(320).mp3"> از اینجا دانلود کنید</a>
+    <h2 id="btn">بزن رو این تا  متن رو تغغییر بدم</h2>
+
+    <script>
+        let s = false;
+        var changer = document.getElementById("btn")
+        changer.addEventListener("click",function(){
+            document.getElementById(text).innerText = s ? "hi" : "bye";
+            s = !s;
+        })
+    </script>
 </body>
 </html>
